@@ -1,8 +1,10 @@
 ---
-title: 塞尔达传说：王国之泪攻略
+title: 塞尔达传说：王国之泪攻略 - 究极手与余料建造全指南
 subtitle: 海拉鲁大陆的传奇冒险（王国之泪）
+description: 塞尔达传说王国之泪攻略：究极手用法、余料建造技巧、神庙解谜攻略、全收集指南，探索海拉鲁的每个角落
 layout: game
 permalink: /games/zelda/
+image: /assets/img/og-zelda.png
 ---
 
 # 塞尔达传说攻略
