@@ -1,5 +1,7 @@
 ---
 title: 王者荣耀攻略
+subtitle: 上分英雄推荐与团战技巧
+layout: game
 permalink: /games/honor-of-kings/
 ---
 
