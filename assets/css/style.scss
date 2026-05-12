@@ -34,3 +34,31 @@ a {
 a:hover {
   color: var(--accent-red) !important;
 }
+
+/* Full-width override for just-the-docs containers */
+.side-bar,
+.site-header,
+.main-header { display: none !important; }
+
+.main-content,
+#main-content,
+.main-content-wrapper,
+#main-content-wrapper,
+.page-content,
+[role='main'],
+.container-lg,
+.container-xl,
+.max-width {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.side-bar + .main-content,
+.side-bar + #main-content {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  width: 100% !important;
+}
