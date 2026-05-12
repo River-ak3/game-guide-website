@@ -1,0 +1,229 @@
+---
+layout: default
+---
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background: #0a0a0f !important;
+  color: #eee !important;
+  font-family: 'Noto Sans SC', -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rajdhani', 'Noto Sans SC', sans-serif;
+}
+
+/* ===== Navbar (same as home) ===== */
+.site-nav-custom {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 64px;
+  background: rgba(10, 10, 15, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.site-nav-brand {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.4rem; font-weight: 700;
+  color: #00d9ff; text-decoration: none;
+  letter-spacing: 0.05em;
+}
+.site-nav-brand:hover { color: #e94560; }
+
+.site-nav-links {
+  display: flex; gap: 2rem; list-style: none;
+}
+.site-nav-links a {
+  color: #888; text-decoration: none; font-weight: 500;
+  font-size: 0.95rem; position: relative; padding: 0.25rem 0;
+  transition: color 0.3s;
+}
+.site-nav-links a::after {
+  content:''; position:absolute; bottom:-2px; left:0;
+  width:0; height:2px;
+  background: linear-gradient(90deg, #e94560, #00d9ff);
+  transition: width 0.3s ease;
+}
+.site-nav-links a:hover { color: #eee; }
+.site-nav-links a:hover::after { width: 100%; }
+
+/* ===== Game Page ===== */
+.game-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 100px 1.5rem 3rem;
+  animation: fadeInUp 400ms ease-out;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.game-page-header {
+  position: relative;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  background: #1a1a2e;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.game-page-header::before {
+  content: '';
+  position: absolute;
+  top: -30%; right: -10%;
+  width: 250px; height: 250px;
+  background: radial-gradient(circle, rgba(233,69,96,0.08), transparent 70%);
+  border-radius: 50%;
+}
+
+.game-page-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.75rem;
+}
+
+.game-page-breadcrumb a {
+  color: #00d9ff; text-decoration: none;
+  transition: color 0.3s;
+}
+.game-page-breadcrumb a:hover { color: #e94560; }
+
+.game-page-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: #eee;
+  margin-bottom: 0.35rem;
+}
+
+.game-page-subtitle {
+  color: #888;
+  font-size: 1.05rem;
+}
+
+/* ===== Content ===== */
+.game-content {
+  color: #eee;
+  line-height: 1.8;
+}
+.game-content h1 { display: none; }
+
+.game-content h2 {
+  font-size: 1.5rem; font-weight: 700;
+  color: #eee; margin-top: 2.5rem; margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+}
+.game-content h2::after {
+  content:''; position:absolute; bottom:-1px; left:0;
+  width: 48px; height: 2px;
+  background: linear-gradient(90deg, #e94560, #00d9ff);
+}
+
+.game-content h3 {
+  font-size: 1.15rem; font-weight: 600;
+  color: #00d9ff; margin-top: 1.5rem; margin-bottom: 0.5rem;
+}
+
+.game-content ul, .game-content ol {
+  padding-left: 1.5rem; margin-bottom: 1rem;
+}
+.game-content li { margin-bottom: 0.3rem; }
+
+.game-content strong {
+  color: #f39c12; font-weight: 600;
+}
+
+.game-content table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.game-content thead { background: rgba(233,69,96,0.1); }
+.game-content th {
+  padding: 0.65rem 1rem; text-align: left;
+  font-weight: 600; color: #e94560;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-family: 'Rajdhani', sans-serif;
+}
+.game-content td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.game-content tr:last-child td { border-bottom: none; }
+.game-content tr:hover td { background: rgba(0,217,255,0.03); }
+
+/* Back link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #00d9ff; text-decoration: none;
+  font-weight: 600; font-family: 'Rajdhani', sans-serif;
+  transition: all 0.3s; margin-top: 2rem; padding: 0.5rem 0;
+}
+.back-link:hover { color: #e94560; gap: 0.6rem; }
+
+/* ===== Override just-the-docs ===== */
+.side-bar { display: none !important; }
+.main-content { max-width: 100% !important; margin-left: 0 !important; padding: 0 !important; }
+.main-header { display: none !important; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .game-page { padding: 80px 1rem 2rem; }
+  .game-page-header { padding: 1.5rem; }
+  .site-nav-custom { padding: 0 1rem; }
+}
+</style>
+
+<!-- Navbar -->
+<nav class="site-nav-custom">
+  <a href="{{ site.baseurl }}/" class="site-nav-brand">GAME GUIDE</a>
+  <ul class="site-nav-links">
+    <li><a href="{{ site.baseurl }}/">首页</a></li>
+    <li><a href="https://github.com/River-ak3/game-guide-website" target="_blank">GitHub</a></li>
+  </ul>
+</nav>
+
+<article class="game-page">
+  <header class="game-page-header">
+    <nav class="game-page-breadcrumb">
+      <a href="{{ site.baseurl }}/">首页</a>
+      <span>›</span>
+      <span>{{ page.title }}</span>
+    </nav>
+    <h1 class="game-page-title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <p class="game-page-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <div class="game-content">
+    {{ content }}
+  </div>
+
+  <a href="{{ site.baseurl }}/" class="back-link">← 返回首页</a>
+</article>
