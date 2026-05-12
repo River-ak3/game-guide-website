@@ -1,5 +1,7 @@
 ---
 title: 我的世界攻略
+subtitle: 从生存入门到红石电路
+layout: game
 permalink: /games/minecraft/
 ---
 
