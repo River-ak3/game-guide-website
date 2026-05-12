@@ -1,8 +1,10 @@
 ---
-title: 我的世界攻略
+title: 我的世界攻略 - 从生存入门到红石电路完整指南
 subtitle: 从生存入门到红石电路
+description: 我的世界攻略：生存模式入门、红石电路教程、建筑技巧、指令大全，从新手到大师的完整指南
 layout: game
 permalink: /games/minecraft/
+image: /assets/img/og-minecraft.png
 ---
 
 # 我的世界攻略
