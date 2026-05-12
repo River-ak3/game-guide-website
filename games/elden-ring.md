@@ -1,8 +1,10 @@
 ---
-title: 艾尔登法环攻略
+title: 艾尔登法环攻略 - 开局路线与BOSS弱点全分析
 subtitle: 交界地中的黄金之路
+description: 艾尔登法环攻略：开局路线推荐、BOSS弱点分析、武器选择指南、隐藏区域探索，助你称霸交界地
 layout: game
 permalink: /games/elden-ring/
+image: /assets/img/og-elden.png
 ---
 
 # 艾尔登法环攻略
