@@ -1,0 +1,36 @@
+---
+---
+
+/* Global override for just-the-docs dark gaming theme */
+/* Layout files (home.html / game.html) contain their own scoped styles */
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-card: #1a1a2e;
+  --accent-red: #e94560;
+  --accent-blue: #00d9ff;
+  --text-primary: #eee;
+  --text-secondary: #888;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+::selection {
+  background: rgba(233, 69, 96, 0.4);
+  color: #fff;
+}
+
+a {
+  color: var(--accent-blue) !important;
+  transition: color 0.3s !important;
+}
+a:hover {
+  color: var(--accent-red) !important;
+}
