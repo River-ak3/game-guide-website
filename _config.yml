@@ -9,13 +9,10 @@ search:
   heading_level: 2
   rel_url_prefix: "/game-guide-website"
   button: true
-nav_external_links:
-  - title: GitHub
-    url: https://github.com/River-ak3/game-guide-website
+heading_anchors: true
 aux_links:
-  - title: View on GitHub
-    url: https://github.com/River-ak3/game-guide-website
-footer_content: "Copyright (c) 2026 Game Guide. Distributed under an MIT License."
+  GitHub: https://github.com/River-ak3/game-guide-website
+footer_content: "Copyright &copy; 2026 Game Guide. Distributed under an MIT License."
 compress_html:
   clippings: all
   comments: all
