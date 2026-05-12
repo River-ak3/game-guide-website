@@ -1,7 +1,27 @@
 title: 游戏攻略大全
-description: 最全面的游戏攻略、技巧和指南
+description: 汇集原神、王者荣耀、我的世界、艾尔登法环、塞尔达传说等热门游戏攻略、技巧与指南，助你成为顶尖玩家
 baseurl: "/game-guide-website"
 url: "https://river-ak3.github.io/game-guide-website"
+lang: zh-CN
+author: GameGuide
+logo: /assets/img/logo.png
+
+# SEO
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/og-default.png
+
+google_analytics: G-XXXXXXXXXX
+
+# Sitemap
+sitemap:
+  filename: "/sitemap.xml"
+  exclude:
+    - "/404.html"
+  include_posts:
+    - "/index.html"
 remote_theme: just-the-docs/just-the-docs
 color_scheme: dark
 search_enabled: true
@@ -19,3 +39,5 @@ compress_html:
   endings: all
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
