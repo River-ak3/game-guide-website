@@ -23,10 +23,10 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: "3.2"
           bundler-cache: true
       - name: Build site
-        run: bundle exec jekyll build --baseurl ${{ github.event.repository.name }}
+        run: bundle exec jekyll build --baseurl "/game-guide-website"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
