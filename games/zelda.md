@@ -1,6 +1,6 @@
 ---
-title: 塞尔达传说攻略
-subtitle: 海拉鲁大陆的传奇冒险
+title: 塞尔达传说：王国之泪攻略
+subtitle: 海拉鲁大陆的传奇冒险（王国之泪）
 layout: game
 permalink: /games/zelda/
 ---
