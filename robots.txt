@@ -1,0 +1,13 @@
+---
+layout: null
+sitemap: false
+---
+User-agent: *
+Allow: /
+Sitemap: https://river-ak3.github.io/game-guide-website/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
