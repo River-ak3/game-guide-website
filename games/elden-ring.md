@@ -1,5 +1,7 @@
 ---
 title: 艾尔登法环攻略
+subtitle: 交界地中的黄金之路
+layout: game
 permalink: /games/elden-ring/
 ---
 
