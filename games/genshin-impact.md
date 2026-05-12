@@ -1,5 +1,7 @@
 ---
 title: 原神攻略
+subtitle: 提瓦特大陆的冒险之旅
+layout: game
 permalink: /games/genshin-impact/
 ---
 
