@@ -1,8 +1,10 @@
 ---
-title: 王者荣耀攻略
+title: 王者荣耀攻略 - 上分英雄推荐与团战技巧全解析
 subtitle: 上分英雄推荐与团战技巧
+description: 王者荣耀攻略：上分英雄推荐、出装铭文搭配、团战技巧解析、赛季节奏把控，助你快速上王者
 layout: game
 permalink: /games/honor-of-kings/
+image: /assets/img/og-hok.png
 ---
 
 # 王者荣耀攻略
