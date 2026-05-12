@@ -1,8 +1,10 @@
 ---
-title: 原神攻略
+title: 原神攻略 - 提瓦特大陆角色培养与深渊攻略
 subtitle: 提瓦特大陆的冒险之旅
+description: 原神全面攻略：角色培养推荐、深渊阵容搭配、素材收集路线、版本活动指南，助你轻松探索提瓦特
 layout: game
 permalink: /games/genshin-impact/
+image: /assets/img/og-genshin.png
 ---
 
 # 原神攻略
